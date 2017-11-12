@@ -33,4 +33,4 @@ def encrypt(message_image, host_image, out_image='encrypted.png'):
 
 
 if __name__ == '__main__':
-    encrypt('./m.png', './o.png', 'out.png')
+    encrypt('./m.png', './o.png', 'encrypted.png')

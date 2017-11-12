@@ -22,4 +22,4 @@ def decrypt(image, out='decrypted.png'):
 
 
 if __name__ == '__main__':
-    decrypt('./decrypted.png')
+    decrypt('./encrypted.png')
