@@ -3,11 +3,11 @@ from PIL import Image
 
 def encrypt(message_image, host_image, out_image='encrypted.png'):
     """
-        :param message_image: Message Image to be hide inside the host Image
-        :type message_image: image-like (png, jpeg, ...)
-        :param host_image: Image to hide the message image in
-        :type host_image: image-like(png, jpeg, ...)
-        :param out_image: file to store the encrypted image in
+        :param message_image: Path to image-like (png, jpeg, ...) represent message image to be hide inside the host image
+        :type message_image: String
+        :param host_image: Path to image-like (png, jpeg, ...) Represent the host image
+        :type host_image: String
+        :param out_image: Name of the file to store the encrypted image in
         :type out_image: String
     """
     msg = Image.open(message_image)
@@ -29,7 +29,6 @@ def encrypt(message_image, host_image, out_image='encrypted.png'):
                     # red value is odd so change it to even
                     img_data[i, j] = (img_data[i, j][0] - 1, img_data[i, j][1], img_data[i, j][2])
     img.save(out_image)
-
 
 
 if __name__ == '__main__':

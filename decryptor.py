@@ -3,9 +3,9 @@ from PIL import Image
 
 def decrypt(image, out='decrypted.png'):
     """
-        :param image: Image to be decrypted
-        :type image: image-like (png, jpeg, ...)
-        :param out: file to store the decrypted image in
+        :param image: Path to image-like (png, jpeg, ...) to be decrypted
+        :type image: String
+        :param out: Name of the file to store the decrypted image in
         :type out: String
     """
     img = Image.open(image)
@@ -22,4 +22,4 @@ def decrypt(image, out='decrypted.png'):
 
 
 if __name__ == '__main__':
-    decrypt('./encrypted.png')
+    decrypt('./Test cases/111111.png')
